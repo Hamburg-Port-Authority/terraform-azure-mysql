@@ -7,7 +7,7 @@ The module is used to deploy azure mysql with a default setup (Infrastructure- a
 # Example Use of Module:
 
     module "mysql" {
-    source                          = "github.com/la-cc/terraform-azure-mysql?ref=1.0.0"
+    source                          = "github.com/la-cc/Hamburg-Port-Authority?ref=1.1.1"
 
     resource_group_name             = var.resource_group.name
     name                            = var.name
