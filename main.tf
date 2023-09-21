@@ -26,8 +26,8 @@ resource "azurerm_mysql_flexible_server" "main" {
   zone     = var.zone
 
   storage {
-    auto_grow_enabled = var.storage["auto_grow_enabled"]
-    size_gb           = var.storage["size_gb"]
+    auto_grow_enabled = var.storage["auto_grow"]
+    size_gb           = var.storage["size"]
     iops              = var.storage["iops"]
 
   }

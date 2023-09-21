@@ -32,6 +32,7 @@ variable "storage" {
     size                  = number
     backup_retention_days = number
     geo_redundant_backup  = bool
+    iops                  = number
   })
 
   default = {
@@ -39,6 +40,7 @@ variable "storage" {
     size                  = 5120
     backup_retention_days = 30
     geo_redundant_backup  = false
+    iops                  = 1000
   }
 }
 
